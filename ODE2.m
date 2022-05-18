@@ -8,7 +8,7 @@ yout = y;
 
 for t = t0 : h : tfinal-h
     s1 = F(t,y);
-    s2 = F(t+h/2,y+h/2)
+    s2 = F(t+h/2,y+h*s1/2)
     y = y + h*s2;
     yout = [yout; y]
 end

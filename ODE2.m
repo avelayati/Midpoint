@@ -1,5 +1,5 @@
 function [yout] = ODE2(F,t0,h,tfinal,y0)
-% Euler solver for ODEs
+% Midpoint solver for ODEs
 % F: Function, t: point, h: step size, y0:initial value 
 % To solve dy/dt = F(t,y) with y(t0) = y0
 
